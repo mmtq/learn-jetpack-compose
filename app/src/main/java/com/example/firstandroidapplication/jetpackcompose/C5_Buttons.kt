@@ -56,7 +56,11 @@ fun DefaultButtonExample() {
         onClick = {
             Toast.makeText(context, "Clicked Default Button", Toast.LENGTH_SHORT).show()
         },
-        colors = ButtonDefaults.buttonColors(containerColor = Color.Blue)
+        colors = ButtonDefaults.buttonColors(containerColor = Color.Blue),
+        elevation = ButtonDefaults.buttonElevation(
+            defaultElevation = 10.dp,
+            pressedElevation = 20.dp
+        )
     ) {
         Text("Click Me")
     }
