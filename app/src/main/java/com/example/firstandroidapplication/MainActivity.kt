@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import com.example.firstandroidapplication.jetpackcompose.StateManagementScreenExample
+import com.example.firstandroidapplication.jetpackcompose.C10_Navigation.AppNavGraph
 import com.example.firstandroidapplication.ui.theme.FirstAndroidApplicationTheme
 
 class MainActivity : ComponentActivity() {
@@ -13,7 +13,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             FirstAndroidApplicationTheme {
-                StateManagementScreenExample()
+                AppNavGraph()
             }
         }
     }
